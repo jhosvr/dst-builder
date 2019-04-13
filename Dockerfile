@@ -24,4 +24,6 @@ COPY --chown=dst:dst Caves Caves
 
 WORKDIR $HOME
 COPY --chown=dst:dst rundst.sh .
+
+EXPOSE 10999
 ENTRYPOINT ./rundst.sh
